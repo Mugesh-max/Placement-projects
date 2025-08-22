@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+   text-align: center;
+}
+.robot{
+    background-color: rgb(55, 184, 55);
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: -30px;
+}
+.head {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(17, 11, 11);
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 50% 50% 30% 30%;
+}
+.eye {
+       display: flex;
+       justify-content:space-around;
+       
+}
+.right_eye{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(190, 185, 190);
+    margin-top: 60px;
+    border-radius: 50% ;
+
+}
+.left_eye{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(179, 169, 177);
+    margin-top: 60px;
+    border-radius: 50% ;
+}
+.middle{
+   display: flex; 
+   width:195px;
+   margin: 0 auto;
+   gap: 5px;
+}
+
+.left_hand{
+      width: 20px;
+      height: 100px;
+      background-color:rgb(6, 241, 241); 
+      border-radius: 10px;
+      margin-top: 20px;
+
+}
+.right_hand{
+    width: 20px;
+    height: 100px;
+    background-color: rgb(51, 12, 226);  
+    border-radius: 10px; 
+    margin-top: 20px;
+}
+
+.middle_body {
+    width: 160px;
+    height: 180px;
+    background-color: rgb(255, 0, 55);
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius:30px;   
+}
+.lower{
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.left_leg{
+    width: 20px;
+    height: 120px;
+    background-color:aqua;
+    border-radius: 10px;
+}
+.right_leg{
+    width: 20px;
+    height: 120px;
+    background-color:rgb(231, 11, 231);
+    border-radius: 10px;
+
+}
+.robot:hover .head,
+.robot:hover .middle_body,
+.robot:hover .left_hand,
+.robot:hover .right_hand,
+.robot:hover .right_leg,
+.robot:hover .left_leg{
+
+    background-color: rgb(208, 230, 12);
+}
+.robot:hover{
+    background-color: rgb(129, 194, 38);
+}
+.robot:hover .left_eye,
+.robot:hover .right_eye{
+    background-color: rgb(241, 239, 239);
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+}
+.robot:hover .head{
+    transition: background-color 3s ease-in-out;
+    animation-name: head_pos;
+    animation-iteration-count: infinite;
+    animation-duration: 0.350s;
+}
+@keyframes head_pos{
+0%{
+    width: 170px;
+    transform: rotate(0deg)
+}
+50%{
+    width: 180px;
+    transform: rotate(10deg)
+}
+75%{
+    width: 180px;
+    transform: rotate(-10deg)
+}
+100%{
+    width: 170px;
+    transform: rotate(0deg)
+}
+}
+.robot:hover .left_hand{
+    transition: background-color 1s ease-in-out;
+    animation-name: left_hand_pos;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    transform-origin: top;
+}
+@keyframes left_hand_pos{
+0%{
+    width: 35px;
+    height: 80;
+    transform: rotate(0deg)
+}
+50%{
+    width: 35px;
+    height: 80;
+    transform: rotate(70deg)
+}
+75%{
+    width: 35px;
+    height: 80;
+    transform: rotate(0deg)
+}
+100%{
+    width: 35px;
+    height: 80;
+    transform: rotate(70deg)
+}
+}
+.robot:hover .right_hand{
+    transition: background-color 1s ease-in-out;
+    animation-name: right_hand_pos;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    transform-origin: top;
+}
+@keyframes right_hand_pos{
+0%{
+    width: 35px;
+    height: 80;
+    transform: rotate(-0deg)
+}
+50%{
+    width: 35px;
+    height: 80;
+    transform: rotate(-70deg)
+}
+75%{
+    width: 35px;
+    height: 80;
+    transform: rotate(-0deg)
+}
+100%{
+    width: 35px;
+    height: 80;
+    transform: rotate(-70deg)
+}
+}
+.robot:hover .right_leg{
+    transition: background-color 1s ease-in-out;
+    animation-name: right_leg_pos;
+    animation-iteration-count: infinite;
+    animation-duration: 0.2s;
+    
+}
+@keyframes right_leg_pos{
+0%{
+
+    transform: rotate(0deg)
+}
+50%{
+
+    transform: rotate(20deg)
+}
+75%{
+
+    transform: rotate(10deg)
+}
+100%{
+
+    transform: rotate(0deg)
+}
+}
+.robot:hover .left_leg{
+    transition: background-color 1s ease-in-out;
+    animation-name: left_leg_pos;
+    animation-iteration-count: infinite;
+    animation-duration: 0.2s;
+  
+}
+@keyframes left_leg_pos{
+0%{
+
+    transform: rotate(0deg)
+}
+50%{
+
+    transform: rotate(-20deg)
+}
+75%{
+ 
+    transform: rotate(-10deg)
+}
+100%{
+
+    transform: rotate(0deg)
+}
+}
+.robot:hover .middle_body{
+    transition: background-color 1s ease-in-out;
+    animation-name: body_pos;
+    animation-iteration-count: infinite;
+    animation-duration: 0.350s;
+}
+@keyframes body_pos{
+0%{
+    width: 170px;
+    height: 170px;
+    transform: rotate(5deg);
+}
+50%{
+    width: 170px;
+    height: 170px;
+    transform: rotate(-5deg);
+}
+75%{
+    width: 170px;
+    height: 170px;
+    transform: rotate(0deg);
+}
+100%{
+    width: 170px;
+    height: 200px;
+    transform: rotate(5deg);
+}
+
+}
+.robot:hover .eye{
+    transition: background-color 1s ease-in-out;
+    animation-name: eye_pos;
+    animation-iteration-count: infinite;
+    animation-duration: 0.350s;
+}
+@keyframes eye_pos{
+0%{
+    width: 170px;
+    height: 170px;
+    transform: rotate(0deg);
+}
+50%{
+    width: 170px;
+    height:300px;
+    transform: rotate(5deg);
+}
+75%{
+    width: 170px;
+    height: 170px;
+    transform: rotate(5deg);
+}
+100%{
+    width: 170px;
+    height: 300px;
+    transform: rotate(0deg);
+}
+
+}
