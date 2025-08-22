@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Normal  Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class=  "calculator">
+        <h3>CASIO </h3>
+        <input type="text" id="result" placeholder = " |" readonly>
+        <div class="buttons">
+            <button onclick="remove_all('AC')">AC</button>
+            <button onclick="remove('DEL')">DEL</button>
+            <button onclick="remove_all()">C</button>   
+            <button onclick="insert('on')">ON</button>
+               
+            <br>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('-')">-</button>
+            <br>
+           
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('*')">*</button>
+            <br>
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button onclick="insert('+')">+</button>
+            <br>
+            <button onclick="insert('0')">0</button>
+            <button onclick="insert('00')">00</button>
+            <button onclick="insert('/')">/</button>
+            <button onclick="calculate('=')">=</button>
+        </div>
+    </div>
+
+    <script src=" css/code.js"></script>
+</body>
+</html>

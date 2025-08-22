@@ -1,0 +1,145 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: #080808;
+    color: rgb(245, 237, 237);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+    animation: fadeIn 60s ease-in-out infinite alternate;
+  }
+  header nav a {
+    color: rgb(247, 239, 239);
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Banner with moving bus */
+  .banner {
+    position: relative;
+    height: 300px;
+    background: linear-gradient(to top, #082c3a, #f8f6f6);
+    text-align: center;
+  }
+  .road {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #d30404;
+  }
+  .bus {
+    position: absolute;
+    bottom: 20px;
+    left: +300px;
+    width: 300px;
+    animation: drive 8s linear infinite;
+  }
+  @keyframes drive {
+    0% { left: -200px; }
+    50% { transform: scale(1.1); }
+    100% { left: 100%; }
+  }
+  .tagline {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    font-size: 28px;
+    color: #000407;
+    animation: fadeIn 2s ease-in-out infinite alternate;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  }
+  tagline {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    font-size: 28px;
+    color: #000407;
+    animation: fadeIn 3s ease-in-out infinite alternate;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  }
+  
+  /* Login Section */
+  .login-section, .booking-section {
+    margin: 50px auto;
+    padding: 30px;
+    width: 400px;
+    background: rgb(247, 233, 233);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  .login-section h2, .booking-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e2022;
+  }
+  form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  form button {
+    background: #004080;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  form button:hover {
+    background: #0066cc;
+  }
+  #loginMessage {
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+  }
+  
+  /* Confirmation Animation */
+  .confirmation {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #d4edda;
+    border: 2px solid #28a745;
+    border-radius: 10px;
+    text-align: center;
+    animation: pop 0.6s ease-in-out;
+  }
+  @keyframes pop {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Footer */
+  footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
